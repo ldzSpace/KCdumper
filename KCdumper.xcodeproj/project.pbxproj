@@ -1,0 +1,321 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		684435631F6A63E3004ED3AF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 684435621F6A63E3004ED3AF /* main.m */; };
+		684435691F6A6649004ED3AF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 684435681F6A6649004ED3AF /* UIKit.framework */; };
+		6844356B1F6A665B004ED3AF /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6844356A1F6A665B004ED3AF /* Security.framework */; };
+		6844356D1F6A6684004ED3AF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6844356C1F6A6684004ED3AF /* Foundation.framework */; };
+		6844356F1F6A66A2004ED3AF /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6844356E1F6A66A2004ED3AF /* CoreFoundation.framework */; };
+		684435711F6A66F0004ED3AF /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 684435701F6A66F0004ED3AF /* libsqlite3.tbd */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		684435521F6A63A4004ED3AF /* KCdumper */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = KCdumper; sourceTree = BUILT_PRODUCTS_DIR; };
+		684435571F6A63A4004ED3AF /* control */ = {isa = PBXFileReference; lastKnownFileType = text; name = control; path = Package/DEBIAN/control; sourceTree = "<group>"; };
+		6844355A1F6A63A4004ED3AF /* 0xdeadfa11 */ = {isa = PBXFileReference; lastKnownFileType = text; name = 0xdeadfa11; path = Package/usr/bin/0xdeadfa11; sourceTree = "<group>"; };
+		684435621F6A63E3004ED3AF /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		684435661F6A63FA004ED3AF /* entitlements.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = entitlements.xml; sourceTree = "<group>"; };
+		684435681F6A6649004ED3AF /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		6844356A1F6A665B004ED3AF /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		6844356C1F6A6684004ED3AF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		6844356E1F6A66A2004ED3AF /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		684435701F6A66F0004ED3AF /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6844354F1F6A63A4004ED3AF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				684435711F6A66F0004ED3AF /* libsqlite3.tbd in Frameworks */,
+				6844356F1F6A66A2004ED3AF /* CoreFoundation.framework in Frameworks */,
+				6844356D1F6A6684004ED3AF /* Foundation.framework in Frameworks */,
+				6844356B1F6A665B004ED3AF /* Security.framework in Frameworks */,
+				684435691F6A6649004ED3AF /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		684435491F6A63A4004ED3AF = {
+			isa = PBXGroup;
+			children = (
+				684435541F6A63A4004ED3AF /* KCdumper */,
+				684435531F6A63A4004ED3AF /* Products */,
+				684435671F6A6649004ED3AF /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		684435531F6A63A4004ED3AF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				684435521F6A63A4004ED3AF /* KCdumper */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		684435541F6A63A4004ED3AF /* KCdumper */ = {
+			isa = PBXGroup;
+			children = (
+				684435661F6A63FA004ED3AF /* entitlements.xml */,
+				684435621F6A63E3004ED3AF /* main.m */,
+				684435551F6A63A4004ED3AF /* Package */,
+			);
+			path = KCdumper;
+			sourceTree = "<group>";
+		};
+		684435551F6A63A4004ED3AF /* Package */ = {
+			isa = PBXGroup;
+			children = (
+				684435561F6A63A4004ED3AF /* DEBIAN */,
+				684435581F6A63A4004ED3AF /* usr */,
+			);
+			name = Package;
+			sourceTree = "<group>";
+		};
+		684435561F6A63A4004ED3AF /* DEBIAN */ = {
+			isa = PBXGroup;
+			children = (
+				684435571F6A63A4004ED3AF /* control */,
+			);
+			name = DEBIAN;
+			sourceTree = "<group>";
+		};
+		684435581F6A63A4004ED3AF /* usr */ = {
+			isa = PBXGroup;
+			children = (
+				684435591F6A63A4004ED3AF /* bin */,
+			);
+			name = usr;
+			sourceTree = "<group>";
+		};
+		684435591F6A63A4004ED3AF /* bin */ = {
+			isa = PBXGroup;
+			children = (
+				6844355A1F6A63A4004ED3AF /* 0xdeadfa11 */,
+			);
+			name = bin;
+			sourceTree = "<group>";
+		};
+		684435671F6A6649004ED3AF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				684435701F6A66F0004ED3AF /* libsqlite3.tbd */,
+				6844356E1F6A66A2004ED3AF /* CoreFoundation.framework */,
+				6844356C1F6A6684004ED3AF /* Foundation.framework */,
+				6844356A1F6A665B004ED3AF /* Security.framework */,
+				684435681F6A6649004ED3AF /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		684435511F6A63A4004ED3AF /* KCdumper */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6844355F1F6A63A4004ED3AF /* Build configuration list for PBXNativeTarget "KCdumper" */;
+			buildPhases = (
+				6844354E1F6A63A4004ED3AF /* Sources */,
+				6844354F1F6A63A4004ED3AF /* Frameworks */,
+				684435501F6A63A4004ED3AF /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KCdumper;
+			productName = KCdumper;
+			productReference = 684435521F6A63A4004ED3AF /* KCdumper */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6844354A1F6A63A4004ED3AF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				TargetAttributes = {
+					684435511F6A63A4004ED3AF = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Manual;
+					};
+				};
+			};
+			buildConfigurationList = 6844354D1F6A63A4004ED3AF /* Build configuration list for PBXProject "KCdumper" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 684435491F6A63A4004ED3AF;
+			productRefGroup = 684435531F6A63A4004ED3AF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				684435511F6A63A4004ED3AF /* KCdumper */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		684435501F6A63A4004ED3AF /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/opt/MonkeyDev/bin/md --xcbp";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6844354E1F6A63A4004ED3AF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				684435631F6A63E3004ED3AF /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		6844355D1F6A63A4004ED3AF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer: dev@heylotus.com (EMMKXLZQ4E)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: dev@heylotus.com (EMMKXLZQ4E)";
+				COPY_PHASE_STRIP = YES;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(MonkeyDevPath)/frameworks/**",
+					"$(MonkeyDevTheosPath)/vendor/lib",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(MonkeyDevTheosPath)/vendor/include/**";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LIBRARY_SEARCH_PATHS = "$(MonkeyDevTheosPath)/vendor/lib/**";
+				MonkeyDevPath = /opt/MonkeyDev;
+				MonkeyDevTheosPath = /opt/theos;
+				OTHER_CFLAGS = "-DTHEOS_INSTANCE_NAME=\"\\\"KCdumper\\\"\"";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6844355E1F6A63A4004ED3AF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer: dev@heylotus.com (EMMKXLZQ4E)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: dev@heylotus.com (EMMKXLZQ4E)";
+				COPY_PHASE_STRIP = NO;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(MonkeyDevPath)/frameworks/**",
+					"$(MonkeyDevTheosPath)/vendor/lib",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(MonkeyDevTheosPath)/vendor/include/**";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LIBRARY_SEARCH_PATHS = "$(MonkeyDevTheosPath)/vendor/lib/**";
+				MonkeyDevPath = /opt/MonkeyDev;
+				MonkeyDevTheosPath = /opt/theos;
+				OTHER_CFLAGS = "-DTHEOS_INSTANCE_NAME=\"\\\"KCdumper\\\"\"";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = NO;
+			};
+			name = Debug;
+		};
+		684435601F6A63A4004ED3AF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer: dev@heylotus.com (EMMKXLZQ4E)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 4TTMSU3C64;
+				INSTALL_PATH = /usr/bin;
+				MonkeyDevBuildPackageOnAnyBuild = NO;
+				MonkeyDevClearUiCacheOnInstall = NO;
+				MonkeyDevCopyOnBuild = NO;
+				MonkeyDevDeviceIP = "";
+				MonkeyDevDevicePort = "";
+				MonkeyDevInstallOnAnyBuild = NO;
+				MonkeyDevInstallOnProfiling = YES;
+				MonkeyDevkillProcessOnInstall = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+			};
+			name = Release;
+		};
+		684435611F6A63A4004ED3AF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer: dev@heylotus.com (EMMKXLZQ4E)";
+				DEVELOPMENT_TEAM = "";
+				INSTALL_PATH = /usr/bin;
+				MonkeyDevBuildPackageOnAnyBuild = NO;
+				MonkeyDevClearUiCacheOnInstall = NO;
+				MonkeyDevCopyOnBuild = NO;
+				MonkeyDevDeviceIP = "";
+				MonkeyDevDevicePort = "";
+				MonkeyDevInstallOnAnyBuild = NO;
+				MonkeyDevInstallOnProfiling = YES;
+				MonkeyDevkillProcessOnInstall = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6844354D1F6A63A4004ED3AF /* Build configuration list for PBXProject "KCdumper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6844355D1F6A63A4004ED3AF /* Release */,
+				6844355E1F6A63A4004ED3AF /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6844355F1F6A63A4004ED3AF /* Build configuration list for PBXNativeTarget "KCdumper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				684435601F6A63A4004ED3AF /* Release */,
+				684435611F6A63A4004ED3AF /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6844354A1F6A63A4004ED3AF /* Project object */;
+}
